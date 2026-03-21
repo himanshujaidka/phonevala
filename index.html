@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneVala - Connecting With Trust</title>
+    <meta name="description"
+        content="PhoneVala is your trusted shop for new and second-hand mobiles, and all types of electronic accessories.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="pip-container" class="pip-container">
+        <iframe id="insta-reel-frame" class="insta-iframe" src="" frameborder="0" scrolling="no"
+            allowtransparency="true" allowfullscreen></iframe>
+        <div class="close-pip" id="close-pip" title="Close Mini Player">&times;</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="./assets/img/Phonevala.png" alt="PhoneVala Logo" class="logo-img">
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link btn-primary">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg" id="hero-bg">
+            <video id="hero-video" class="bg-video" autoplay muted loop playsinline
+                src="./assets/video/header_intro.mp4"></video>
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content reveal">
+            <h1 class="hero-title">Connecting With <span class="highlight">Trust</span></h1>
+            <p class="hero-subtitle">Premium new and pre-owned smartphones, speakers, chargers, and accessories.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Explore Products</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <h2 class="section-title">Who We Are</h2>
+                    <div class="title-underline"></div>
+                    <p>At <strong>PhoneVala</strong>, we believe every connection matters. Whether you are looking for
+                        the latest flagship smartphone, a reliable second-hand device, or essential accessories to
+                        elevate your audio experience, we have it all.</p>
+                    <p>We build our foundation on trust, ensuring that every product you purchase meets the highest
+                        standards of quality and performance.</p>
+                    <ul class="features-list">
+                        <li><span class="check-icon">✓</span> Premium New Mobiles</li>
+                        <li><span class="check-icon">✓</span> Certified Second-Hand Devices</li>
+                        <li><span class="check-icon">✓</span> High-Quality Speakers & Chargers</li>
+                        <li><span class="check-icon">✓</span> Trust & Transparency</li>
+                    </ul>
+                </div>
+                <div class="about-image reveal-right">
+                    <div class="image-wrapper glass-panel">
+                        <video src="./assets/video/intro.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products section bg-darker">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title text-center">Our Catalog</h2>
+                <div class="title-underline center"></div>
+                <p class="text-center section-desc">Discover our range of verified electronics that fit your lifestyle
+                    and budget.</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card glass-card reveal">
+                    <div class="card-img">
+                        <img src="./assets//img/iphone17gold" alt="iPhone 17 Pro Gold">
+                        <div class="badge">Brand New</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Premium iPhone 17 Pro</h3>
+                        <p>Experience cutting-edge technology with the breathtaking new iPhone 17 Pro in stunning Gold.
+                        </p>
+                        <a href="#contact" class="btn-text">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card glass-card reveal delay-1">
+                    <div class="card-img">
+                        <img src="./assets/img/s23.jpg" alt="Samsung Premium Mobiles">
+                        <div class="badge badge-secondary">Certified Used</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Samsung Premium Mobiles</h3>
+                        <p>High-quality, rigorously tested premium Samsung Galaxy devices that look and perform
+                            perfectly.</p>
+                        <a href="#contact" class="btn-text">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card glass-card reveal delay-2">
+                    <div class="card-img">
+                        <img src="./assets//img/marshal.jpeg" alt="Marshall Speakers">
+                    </div>
+                    <div class="card-body">
+                        <h3>Marshall Speakers</h3>
+                        <p>Enhance your audio experience with premium Marshall Bluetooth speakers, delivering legendary
+                            sound.</p>
+                        <a href="#contact" class="btn-text">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title text-center">Gallery</h2>
+                <div class="title-underline center"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item reveal col-span-2">
+                    <video src="./assets/video/gallery1.mp4" autoplay muted loop playsinline></video>
+                    <div class="gallery-overlay">
+                        <span>Latest Smartphones</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <video src="./assets/video/gallery2.mp4" autoplay muted loop playsinline></video>
+                    <div class="gallery-overlay">
+                        <span>New Arrivals</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal delay-1 row-span-2">
+                    <video src="./assets/video/gallery5.mp4" autoplay muted loop playsinline></video>
+                    <div class="gallery-overlay">
+                        <span>Premium Cases</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal delay-2">
+                    <video src="./assets/video/gallery3.mp4" autoplay muted loop playsinline></video>
+                    <div class="gallery-overlay">
+                        <span>Premium Sound</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal col-span-2">
+                    <video src="./assets/video/gallery4.mp4" autoplay muted loop playsinline></video>
+                    <div class="gallery-overlay">
+                        <span>Smart Gadgets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo">
+                        <img src="./assets/img/Phonevala.png" alt="PhoneVala Logo" class="logo-img footer-logo-img">
+                    </a>
+                    <p class="footer-desc">Connecting With Trust. Your premier destination for the best mobile devices
+                        and high-quality electronic accessories.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>📍 Lane No. 11, Gandhi Colony, Muzaffarnagar, Uttar Pradesh/p>
+                    <p>📞 +91 84394 10009</p>
+                    <p>✉️ support@phonevala.co.in</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PhoneVala. All rights reserved.</p>
+                <p
+                    style="margin-top: 10px; color: #d4af37; font-size: 0.95rem; font-weight: 500; letter-spacing: 0.5px;">
+                    Developed and maintained by Devmant Pvt. Ltd.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Icon -->
+    <a href="https://wa.me/1234567890" class="floating-wa" target="_blank" rel="noopener noreferrer"
+        title="Chat with us on WhatsApp">
+        <svg viewBox="0 0 32 32" class="wa-icon" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M16 2.5C8.5 2.5 2.5 8.5 2.5 16C2.5 18.9 3.4 21.6 5 23.8L3 30L9.4 28.1C11.4 29.3 13.6 30 16 30C23.5 30 29.5 24 29.5 16.5C29.5 9 23.5 2.5 16 2.5ZM16 27.8C13.8 27.8 11.8 27.2 10 26.2L9.6 26L4.7 27.5L6.2 22.8L5.9 22.4C4.8 20.6 4.1 18.4 4.1 16.1C4.1 9.4 9.6 4 16.2 4C22.8 4 28.2 9.4 28.2 16.1C28.2 22.8 22.8 27.8 16 27.8ZM22.4 20.1C22 20 20.2 19 19.9 18.9C19.6 18.8 19.4 18.7 19.1 19.1C18.9 19.5 18.3 20.3 18.1 20.5C17.9 20.7 17.7 20.7 17.3 20.5C16.9 20.3 15.6 19.9 14.2 18.6C13 17.6 12.3 16.3 12 15.9C11.8 15.6 12 15.4 12.2 15.2C12.4 15 12.6 14.8 12.8 14.5C13 14.3 13.1 14.1 13.2 13.8C13.3 13.5 13.3 13.3 13.2 13.1C13 12.9 12.3 11.1 12 10.4C11.7 9.6 11.4 9.7 11.2 9.7C11 9.7 10.8 9.7 10.5 9.7C10.3 9.7 9.9 9.8 9.6 10.2C9.3 10.6 8.3 11.5 8.3 13.2C8.3 15 9.7 16.7 9.9 17C10.1 17.3 12.3 20.7 15.7 22.2C16.5 22.5 17.1 22.7 17.6 22.9C18.4 23.1 19.1 23.1 19.7 23C20.4 22.9 21.8 22.1 22.2 21.2C22.4 20.4 22.4 19.7 22.4 20.1Z"
+                fill="#fff" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
