@@ -266,12 +266,13 @@ ul {
 ========================================= */
 .hero {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 140px;
+    padding-bottom: 60px;
 }
 
 .hero-bg {
@@ -807,6 +808,9 @@ ul {
     font-variant-numeric: tabular-nums;
     font-family: var(--font-heading);
     text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    display: inline-block;
+    width: 2.4ch;
+    text-align: center;
 }
 
 .time-box small {
