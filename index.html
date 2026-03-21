@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <div class="corner-ribbon">Grand Opening</div>
     <div id="pip-container" class="pip-container">
         <iframe id="insta-reel-frame" class="insta-iframe" src="" frameborder="0" scrolling="no"
             allowtransparency="true" allowfullscreen></iframe>
@@ -54,6 +55,18 @@
         <div class="hero-content reveal">
             <h1 class="hero-title">Connecting With <span class="highlight">Trust</span></h1>
             <p class="hero-subtitle">Premium new and pre-owned smartphones, speakers, chargers, and accessories.</p>
+            
+            <!-- Opening Celebration Countdown -->
+            <div class="opening-celebration">
+                <div class="celebration-badge">🎉 Grand Opening Tomorrow 🎉</div>
+                <div class="countdown-timer" id="hero-countdown">
+                    <div class="time-box"><span id="days">00</span><small>Days</small></div>
+                    <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+                    <div class="time-box"><span id="mins">00</span><small>Mins</small></div>
+                    <div class="time-box"><span id="secs">00</span><small>Secs</small></div>
+                </div>
+            </div>
+
             <div class="hero-buttons">
                 <a href="#products" class="btn btn-primary">Explore Products</a>
                 <a href="#about" class="btn btn-secondary">Learn More</a>
@@ -249,6 +262,7 @@
         </svg>
     </a>
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="script.js"></script>
 </body>
 

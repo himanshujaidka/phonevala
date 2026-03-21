@@ -739,6 +739,86 @@ ul {
 .delay-2 { transition-delay: 0.4s; }
 
 /* =========================================
+   CELEBRATION RIBBON & COUNTDOWN
+========================================= */
+.corner-ribbon {
+    width: 200px;
+    background: linear-gradient(90deg, var(--clr-gold), var(--clr-gold-light));
+    position: fixed;
+    top: 30px;
+    right: -50px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: var(--clr-black);
+    transform: rotate(45deg);
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
+    z-index: 10005;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+.opening-celebration {
+    background: rgba(5, 5, 5, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 2.5rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+    display: inline-block;
+}
+
+.celebration-badge {
+    color: var(--clr-gold);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.countdown-timer {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-width: 80px;
+}
+
+.time-box span {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--clr-white);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    font-family: var(--font-heading);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.time-box small {
+    color: var(--clr-gold-light);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* =========================================
    RESPONSIVE DESIGN
 ========================================= */
 @media (max-width: 992px) {
@@ -785,6 +865,16 @@ ul {
     }
     .hero-title {
         font-size: 2.8rem;
+    }
+    .corner-ribbon {
+        display: none;
+    }
+    .time-box {
+        min-width: 60px;
+        padding: 0.5rem 0.8rem;
+    }
+    .time-box span {
+        font-size: 1.8rem;
     }
     .features-list {
         grid-template-columns: 1fr;
